@@ -1,0 +1,157 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    tools:context=".MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@android:color/white"
+>
+
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+
+                    android:orientation="horizontal">
+                    <RadioButton
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:id="@+id/ipDnsRadio"
+                        android:textColor="@android:color/white"
+                        android:layout_marginTop="10dp"
+                        android:textSize="18dp"
+                        android:text="IP/DNS"
+                        />
+                    <RadioButton
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/bluetoothRadio"
+                        android:textSize="18dp"
+                        android:text="Bluetooth (R)"
+                        android:checked="true" />
+                </RadioGroup>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/ipAddressText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Ip Address:"
+                        android:textSize="18.0sp"
+                        android:layout_weight="1" />
+                    <EditText
+                        android:id="@+id/ipAddressInput"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textNoSuggestions|text"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+          >
+                    <TextView
+                        android:id="@+id/portText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18.0sp"
+                        android:text="Port:"
+                        android:layout_weight="1" />
+                    <EditText
+                        android:id="@+id/portInput"
+                        android:text="9100"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLength="5"
+                        android:inputType="number"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+            >
+                    <TextView
+                        android:id="@+id/macAddressText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18.0sp"
+                        android:text="MAC Address:"
+                        android:layout_weight="1" />
+                    <EditText
+                        android:id="@+id/macInput"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textNoSuggestions|text"
+                        android:text="54:6C:OE:01:7F:C8"
+                        android:layout_weight="1"
+             />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/statusText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Status: Not Connected"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_horizontal"
+                    android:textSize="18.0sp" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                >
+
+                <Button
+                    android:id="@+id/testButton"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:layout_width="fill_parent"
+                    android:textStyle="bold"
+                    android:text="Test"
+
+                    android:layout_height="40dp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</ScrollView>
+
+
+
+
+
+
+
+
